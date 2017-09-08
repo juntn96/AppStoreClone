@@ -14,6 +14,13 @@
 		A138110B1F5692E800B2D987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13811091F5692E800B2D987 /* LaunchScreen.storyboard */; };
 		A13811161F5692E800B2D987 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13811151F5692E800B2D987 /* AppStoreTests.swift */; };
 		A13811211F5692E800B2D987 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13811201F5692E800B2D987 /* AppStoreUITests.swift */; };
+		A1522C0F1F612ADF004FA533 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1522C0E1F612ADF004FA533 /* ScrollViewController.swift */; };
+		A1F517151F5E5AF600B47F85 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F517141F5E5AF600B47F85 /* ItemTableViewCell.swift */; };
+		A1F65FA31F5FABBE009C6211 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65FA21F5FABBE009C6211 /* HeaderCollectionViewCell.swift */; };
+		A1F8E7CB1F602CC7005A0054 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8E7CA1F602CC7005A0054 /* HeaderView.swift */; };
+		A1F8E7CD1F6051AD005A0054 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8E7CC1F6051AD005A0054 /* ItemCollectionViewCell.swift */; };
+		A1F8E7CF1F605E18005A0054 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8E7CE1F605E18005A0054 /* AppItem.swift */; };
+		A1F8E7D11F605FCB005A0054 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8E7D01F605FCB005A0054 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		A138111C1F5692E800B2D987 /* AppStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13811201F5692E800B2D987 /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		A13811221F5692E800B2D987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1522C0E1F612ADF004FA533 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		A1F517141F5E5AF600B47F85 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		A1F65FA21F5FABBE009C6211 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1F8E7CA1F602CC7005A0054 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A1F8E7CC1F6051AD005A0054 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = AppStore/Controllers/ItemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A1F8E7CE1F605E18005A0054 /* AppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
+		A1F8E7D01F605FCB005A0054 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,8 @@
 		A138112E1F56934600B2D987 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1F8E7CE1F605E18005A0054 /* AppItem.swift */,
+				A1F8E7D01F605FCB005A0054 /* MockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,9 +160,31 @@
 		A13811301F56936B00B2D987 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A13811341F56C1F900B2D987 /* CollectionViewCellController */,
+				A13811311F56B3F100B2D987 /* TableViewCellController */,
 				A13811021F5692E800B2D987 /* ViewController.swift */,
+				A1F8E7CA1F602CC7005A0054 /* HeaderView.swift */,
+				A1522C0E1F612ADF004FA533 /* ScrollViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A13811311F56B3F100B2D987 /* TableViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F517141F5E5AF600B47F85 /* ItemTableViewCell.swift */,
+			);
+			name = TableViewCellController;
+			path = ViewCellController;
+			sourceTree = "<group>";
+		};
+		A13811341F56C1F900B2D987 /* CollectionViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F65FA21F5FABBE009C6211 /* HeaderCollectionViewCell.swift */,
+				A1F8E7CC1F6051AD005A0054 /* ItemCollectionViewCell.swift */,
+			);
+			path = CollectionViewCellController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F8E7CB1F602CC7005A0054 /* HeaderView.swift in Sources */,
+				A1F517151F5E5AF600B47F85 /* ItemTableViewCell.swift in Sources */,
+				A1F65FA31F5FABBE009C6211 /* HeaderCollectionViewCell.swift in Sources */,
+				A1F8E7CD1F6051AD005A0054 /* ItemCollectionViewCell.swift in Sources */,
+				A1522C0F1F612ADF004FA533 /* ScrollViewController.swift in Sources */,
+				A1F8E7CF1F605E18005A0054 /* AppItem.swift in Sources */,
+				A1F8E7D11F605FCB005A0054 /* MockData.swift in Sources */,
 				A13811031F5692E800B2D987 /* ViewController.swift in Sources */,
 				A13811011F5692E800B2D987 /* AppDelegate.swift in Sources */,
 			);
@@ -530,6 +575,7 @@
 				A13811271F5692E800B2D987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13811281F5692E800B2D987 /* Build configuration list for PBXNativeTarget "AppStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +584,7 @@
 				A138112A1F5692E800B2D987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A138112B1F5692E800B2D987 /* Build configuration list for PBXNativeTarget "AppStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +593,7 @@
 				A138112D1F5692E800B2D987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
